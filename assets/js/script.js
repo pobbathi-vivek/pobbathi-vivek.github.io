@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// script.js
+
+document.getElementById("downloadBtn").addEventListener("click", function() {
+  // Replace 'path/to/your/resume.pdf' with the path to your resume file
+  var link = document.createElement('a');
+  link.href = './assets/images/Vivek_Resume(1).pdf';
+  link.download = 'file:///C:/Users/Asus/OneDrive/Desktop/Resume]/Vivek_Resume(1).pdf'; // The name of the file to be downloaded
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
